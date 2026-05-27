@@ -22,12 +22,3 @@ ensure sm_combat_stats
 ```
 
 Edit `config.lua` to force a specific adapter or leave values as `auto`.
-
-## Version Checks
-Every SM resource prints a txAdmin/server console startup line with its `fxmanifest.lua` version.
-
-To enable update checks, set the resource URL in `SMBridgeConfig.VersionCheck.Resources`. The URL can return plain text such as `1.0.1`, or JSON such as:
-
-```json
-{ "version": "1.0.1", "url": "https://example.com/releases" }
-```
